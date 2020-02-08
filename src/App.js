@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+
+  for (let i = 0; i < 11; i++) {
+    console.log('I am frm the code ', i);
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
