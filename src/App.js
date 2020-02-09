@@ -5,7 +5,7 @@ import './App.css';
 function App() {
 
 
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 15; i++) {
     console.log('I am frm the code ', i);
   }
 
