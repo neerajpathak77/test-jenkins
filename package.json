@@ -12,10 +12,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build_jenkins": "npm i && react-scripts build"
+    // "build_jenkins": "npm i && react-scripts build",
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
