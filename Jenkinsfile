@@ -4,9 +4,11 @@
 def name = "Hello";
 
 
-def functionInPipeline() {
+def functionInPipeline(aggument) {
   def name = "I am from function"
   echo ">>>>>> $name <<<<<<<<"
+
+  return "aggument passed to me was $aggument"
 }
 
 pipeline {
@@ -27,7 +29,7 @@ pipeline {
           script {
               name = "SSSSSSS"
            }
-          functionInPipeline()
+          functionInPipeline("neeraj")
         }
     }
 
