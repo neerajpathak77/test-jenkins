@@ -30,7 +30,6 @@ pipeline {
           script {
               name = "SSSSSSS"
            }
-              name = "ddd"
 
           echo "I am inside steps $name"
 
