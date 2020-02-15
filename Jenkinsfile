@@ -1,9 +1,12 @@
 pipeline {
   agent any
 
-          echo "qwerty"
 
-        echo env
+       
+        withEnv([]) {
+              echo "qwerty"
+
+}
   stages {
     stage ('Compile and Stage') {
 
@@ -14,3 +17,4 @@ pipeline {
     }
   }
 }
+
