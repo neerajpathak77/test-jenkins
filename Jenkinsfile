@@ -18,8 +18,7 @@ pipeline {
     }
     stage ('Logging') {
    steps {
-           workspace = pwd()
-        echo 'This stage will be executed first.'
+        echo 'This stage will be executed first. ${env}'
       }
     }
   }
