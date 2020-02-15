@@ -1,11 +1,11 @@
 pipeline {
   agent any
-  stages {
-    stage ('Compile and Stage') {
 
-        echo "qwerty"
+          echo "qwerty"
 
         echo env
+  stages {
+    stage ('Compile and Stage') {
 
           steps {
               sh "npm install"
