@@ -42,7 +42,7 @@ pipeline {
   //             build job: 'parameterised_job_called_from_a_jenkinsfile-1', parameters: [string(name: 'testVarible', value: '"Hello I am from varible value passed to me"')]
   //       }
   //     }
-  // }
+  }
 }
 
 
