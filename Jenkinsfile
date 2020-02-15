@@ -20,10 +20,12 @@ pipeline {
 
 
     stage ('Logging') {
-      name = "Hello--------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-        steps {
+
+name = "SSSSSSS"
           echo "This stage will be executed first. $name"
-        }
+
+        // steps {
+        // }
     }
 
 
