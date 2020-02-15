@@ -21,13 +21,15 @@ pipeline {
 
     stage ('Logging') {
 
-         script {
-              name = "SSSSSSS"
-           }
+         
 
 
 
         steps {
+
+          script {
+              name = "SSSSSSS"
+           }
 
           echo "I am inside steps $name"
 
