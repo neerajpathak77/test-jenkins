@@ -1,12 +1,5 @@
 pipeline {
   agent any
-
-
-       
-        withEnv([]) {
-              echo "qwerty"
-
-}
   stages {
     stage ('Compile and Stage') {
 
