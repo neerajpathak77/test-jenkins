@@ -12,7 +12,6 @@ pipeline {
 
 
     stage ('Compile and Stage') {
-
         steps {
           sh "npm install"
           sh "npm run build"
@@ -21,6 +20,7 @@ pipeline {
 
 
     stage ('Logging') {
+      name = "Hello--------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
         steps {
           echo "This stage will be executed first. $name"
         }
