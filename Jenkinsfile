@@ -22,7 +22,7 @@ pipeline {
 
     stage ('Logging') {
         steps {
-          echo "This stage will be executed first. ${name}"
+          echo "This stage will be executed first. $name"
         }
     }
 
