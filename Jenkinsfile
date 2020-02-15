@@ -28,9 +28,9 @@ pipeline {
         steps {
           script {
               name = "SSSSSSS"
+                        def val = functionInPipeline("neeraj")
+                                  echo "$val"
            }
-          def val = functionInPipeline("neeraj")
-          echo "$val"
         }
     }
 
