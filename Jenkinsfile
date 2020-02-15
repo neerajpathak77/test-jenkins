@@ -1,3 +1,11 @@
+
+
+
+def workspace = 'workspace-none'
+
+
+
+
 pipeline {
   agent any
   stages {
@@ -7,6 +15,11 @@ pipeline {
               sh "npm install"
               sh "npm run build"
           }
+    }
+    stage ('Logging') {
+      workspace = pwd()
+      echo 'workspace is -->> ${workspace}'
+
     }
   }
 }
