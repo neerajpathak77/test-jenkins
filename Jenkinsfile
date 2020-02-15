@@ -29,7 +29,8 @@ pipeline {
           script {
               name = "SSSSSSS"
            }
-          functionInPipeline("neeraj")
+          def val = functionInPipeline("neeraj")
+          echo "$val"
         }
     }
 
