@@ -1,7 +1,7 @@
 
 
 
-def workspace = 'workspace-none'
+def name = 'none'
 
 
 
@@ -17,10 +17,9 @@ pipeline {
           }
     }
     stage ('Logging') {
-      workspace = ''
-    steps {
-        echo 'This stage will be executed first. $env'
-      }
+        steps {
+            // echo 'This stage will be executed first. $env'
+        }
     }
   }
 }
