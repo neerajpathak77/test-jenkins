@@ -4,7 +4,10 @@
 def name = "Hello";
 
 
-
+def functionInPipeline() {
+  def name = "I am from function"
+  echo ">>>>>> $name <<<<<<<<"
+}
 
 pipeline {
   agent any
@@ -20,19 +23,11 @@ pipeline {
 
 
     stage ('Logging') {
-
-         
-
-
-
         steps {
-
           script {
               name = "SSSSSSS"
            }
-
-          echo "I am inside steps $name"
-
+          functionInPipeline()
         }
     }
 
