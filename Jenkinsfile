@@ -1,7 +1,7 @@
 
 
 
-def name;
+def name = "Hello";
 
 
 
@@ -9,19 +9,24 @@ def name;
 pipeline {
   agent any
   stages {
+
+
     stage ('Compile and Stage') {
 
-          steps {
-              sh "npm install"
-              sh "npm run build"
-          }
+        steps {
+          sh "npm install"
+          sh "npm run build"
+        }
     }
+
+
     stage ('Logging') {
         steps {
-          name = "I am assigned"
           echo "This stage will be executed first. ${name}"
         }
     }
+
+
   }
 }
 
