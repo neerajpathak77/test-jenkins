@@ -17,7 +17,8 @@ pipeline {
           }
     }
     stage ('Logging') {
-   steps {
+      workspace = ''
+    steps {
         echo 'This stage will be executed first. $env'
       }
     }
