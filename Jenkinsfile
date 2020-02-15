@@ -31,7 +31,9 @@ pipeline {
               def val = functionInPipeline("NO NAME")
               echo "$val"
               echo "++++++++++++++++env++++++++++++++++++"
+              echo "++++++++++++++++env++++++++++++++++++"
               echo "$env.BRANCH_NAME"
+              echo "++++++++++++++++env++++++++++++++++++"
               echo "++++++++++++++++env++++++++++++++++++"
            }
         }
