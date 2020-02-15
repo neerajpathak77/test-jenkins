@@ -17,9 +17,10 @@ pipeline {
           }
     }
     stage ('Logging') {
-      workspace = pwd()
-      echo 'workspace is -->> ${workspace}'
-
+   steps {
+           workspace = pwd()
+        echo 'This stage will be executed first.'
+      }
     }
   }
 }
