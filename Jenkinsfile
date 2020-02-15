@@ -1,7 +1,7 @@
 
 
 
-def name = "none"
+def name;
 
 
 
@@ -9,17 +9,17 @@ def name = "none"
 pipeline {
   agent any
   stages {
-    stage ("Compile and Stage") {
+    stage ('Compile and Stage') {
 
           steps {
               sh "npm install"
               sh "npm run build"
           }
     }
-    stage ("Logging") {
+    stage ('Logging') {
         steps {
           name = "I am assigned"
-          echo "This stage will be executed first. $name"
+          echo "This stage will be executed first. ${name}"
         }
     }
   }
